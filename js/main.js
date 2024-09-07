@@ -107,6 +107,6 @@ function toJsonBin() {
   req.open('PUT', 'https://api.jsonbin.io/v3/b/' + apiKey, true);
   req.setRequestHeader('Content-Type', 'application/json');
   req.setRequestHeader('X-Bin-Versioning', 'false');
-  req.setRequestHeader('X-Master-Key', 'X-Master-Key-number');
+  req.setRequestHeader('X-Master-Key', 'X_Master_Key_number');
   req.send(newJsonString);
 }
