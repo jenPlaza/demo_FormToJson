@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A simple demo converting form field answers to json and storing them on the cloud using Jsonbin.io api." />
-    <meta name="keywords" content="form fields, form answers storage, json, jsonbin, jsonbin api, form answers to json, bootstrap form" />
+    <meta
+      name="description"
+      content="A simple demo converting form field answers to json and storing them on the cloud using Jsonbin.io api."
+    />
+    <meta
+      name="keywords"
+      content="form fields, form answers storage, json, jsonbin, jsonbin api, form answers to json, bootstrap form"
+    />
     <title>From Form to Json</title>
     <!-- <link rel="stylesheet" href="z_stylesheet.css" /> -->
     <!-- google fonts -->
@@ -22,7 +28,7 @@
       rel="stylesheet"
     />
     <!-- bootstrap -->
-     <link
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
     />
@@ -30,29 +36,38 @@
   <body>
     <main>
       <!--contact Form-->
-	<div class="container-fluid w-75 pb-5 pt-3">
-		
-    <!--row 1: form-->
-    <div class="row">
-      <form action="https://jsonplaceholder.typicode.com/users" id="exampleForm">
-        <label for="first-name">
-          <strong>First Name:</strong>
-          <input type="text" name="first_name" id="first-name">
-        </label>
-      
-        <label for="last-name">
-          <strong>Last Name:</strong>
-          <input type="text" name="last_name" id="last-name">
-        </label>
-      
-        <input class="btn btn-success submit" type="submit" value="Create new user">
-        <input class="btn border-success submit text-success font-weight-bold bg-light" type="submit" value="Send to jsonBin" onclick="toJsonBin();">
-      </form>
-    </div><!--row-->
-    </div> <!--container-->
+      <div class="container-fluid w-75 pb-5 pt-3">
+        <!--row 1: form-->
+        <div class="row">
+          <form id="exampleForm">
+            <label for="first-name">
+              <strong>First Name:</strong>
+              <input type="text" name="first_name" id="first-name" />
+            </label>
+
+            <label for="last-name">
+              <strong>Last Name:</strong>
+              <input type="text" name="last_name" id="last-name" />
+            </label>
+
+            <input
+              class="btn btn-success submit"
+              type="submit"
+              value="Create new user"
+            />
+            <input
+              class="btn border-success submit text-success font-weight-bold bg-light"
+              type="submit"
+              value="Send to jsonBin"
+              onclick="toJsonBin();"
+            />
+          </form>
         </div>
+        <!--row-->
+      </div>
+      <!--container-->
     </main>
-    <script type="text/javascript" src="./js/config.js"></script>
- <script type="text/javascript" src="./js/javascript.js"></script>
+    <script type="text/javascript" src="./js/config_api.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
