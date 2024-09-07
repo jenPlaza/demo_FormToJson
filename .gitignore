@@ -1,4 +1,2 @@
-filename = 'config'
 # dependencies
-./js/config.js
-config.js
+config_api.js
