@@ -1,1 +1,3 @@
 filename = 'config'
+# dependencies
+./js/config.js
